@@ -30,9 +30,10 @@ const Header =(props) => {
                     <img src="/images/series-icon.svg" alt="SERIES"/>
                     <span>SERIES</span>
                 </a>
-                
             </div>
+            <a class="Login"> LOGIN</a>
         </nav>
+
     )
 }
 export default Header
