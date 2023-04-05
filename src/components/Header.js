@@ -1,5 +1,11 @@
+import { auth, provider } from "../firebase"
 import "./Header.css"
 const Header =(props) => {
+    const handleAuth = () =>{
+        auth.signInWithPopup(provider).then((result)=>{
+            console.log(result)
+        } ).catch((error) =>alert(error.message))
+    }
     return (
         <nav class="Nav"> 
             <div class="Logo">
